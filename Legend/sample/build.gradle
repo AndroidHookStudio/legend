@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "22.0.1"
+    buildToolsVersion "27.0.3"
 
     defaultConfig {
         applicationId "com.legend.demo"
@@ -20,6 +20,6 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':legendCore')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':legendCore')
 }
